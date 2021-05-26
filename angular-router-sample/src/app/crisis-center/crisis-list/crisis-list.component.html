@@ -1,0 +1,20 @@
+<h2>CRISES</h2>
+<p>This part shows how to add a "crises" module and its routing and then incorporate it into the AppComponent module. </p>
+<ul class="heroes">
+  <li *ngFor="let crisis of crises$ | async"
+    [class.selected]="crisis.id === selectedId">
+    <a [routerLink]="[crisis.id]">
+      <span class="badge">{{ crisis.id }}</span>{{ crisis.name }}
+    </a>
+  </li>
+</ul>
+
+<a class="btn btn-primary m-3" [routerLink]="['1']">
+  <span class="badge">Item 1</span>
+</a>
+
+<!-- <a class="btn btn-primary m-3" routerLink="overview">
+  <span class="badge">Overview</span>
+</a> -->
+
+<router-outlet></router-outlet>

@@ -1,0 +1,12 @@
+<h1>Angular Router</h1>
+<nav class="container" >
+  <a class="btn p-2 m-2" routerLink='/crisis-center' routerLinkActive='active'>Crisis Center</a>
+  <a class="btn p-2 m-2" routerLink='/heroes' routerLinkActive='active'>Heroes</a>
+  <a  class="btn p-2 m-2" routerLink="/admin" routerLinkActive="active">Admin</a>
+  <a  class="btn p-2 m-2" routerLink="/login" routerLinkActive="active">Login</a>
+</nav>
+<hr class="mt-3 mb-3">
+<!-- <router-outlet></router-outlet> -->
+<div class="container" [@routeAnimation]="getAnimationData(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>

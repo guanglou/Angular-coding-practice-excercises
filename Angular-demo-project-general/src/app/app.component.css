@@ -1,0 +1,12 @@
+
+div > nav.return-button {
+  text-align: right;
+}
+
+div > nav button {
+  font-size: 12pt;
+}
+
+div > h1.title {
+  color: blueviolet;
+}

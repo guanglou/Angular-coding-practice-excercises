@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Observables Demo</h2>
+  <span>Show employees list info.</span>
+  <br>
+  <h2>Employees List</h2>
+  <li *ngFor="let employee of employees">
+    <span>{{errorMsg}}</span>
+    <span>{{ employee.name }} - {{ employee.age }}</span>
+  </li>
+</div>
+
